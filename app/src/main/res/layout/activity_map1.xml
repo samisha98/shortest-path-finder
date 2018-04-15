@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/relative"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.sai.myapplication.Dijk.Map1"
+    >
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="141dp"
+    android:layout_marginStart="141dp"
+    android:layout_marginTop="35dp"
+    android:text="MUMBAI" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/textView2"
+    android:layout_marginLeft="31dp"
+    android:layout_marginStart="31dp"
+    android:layout_marginTop="80dp"
+    android:text="BANGALORE" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="33dp"
+    android:layout_marginEnd="62dp"
+    android:layout_marginRight="62dp"
+    android:text="PUNE" />
+
+<TextView
+    android:id="@+id/textView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SURAT"
+    android:layout_above="@+id/textView10"
+    android:layout_alignRight="@+id/textView3"
+    android:layout_alignEnd="@+id/textView3"
+    android:layout_marginBottom="56dp" />
+
+<TextView
+    android:id="@+id/textView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GOA"
+    android:layout_below="@+id/textView4"
+    android:layout_toRightOf="@+id/textView10"
+    android:layout_toEndOf="@+id/textView10"
+    android:layout_marginTop="29dp" />
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NAGPUR"
+    android:layout_below="@+id/textView7"
+    android:layout_alignLeft="@+id/textView4"
+    android:layout_alignStart="@+id/textView4" />
+
+<TextView
+    android:id="@+id/textView10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CHENNAI"
+    android:layout_above="@+id/textView11"
+    android:layout_toRightOf="@+id/textView7"
+    android:layout_toEndOf="@+id/textView7"
+    android:layout_marginLeft="25dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginBottom="69dp" />
+/*
+<TextView
+    android:id="@+id/textView11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DELHI"
+    android:layout_marginBottom="88dp"
+    android:layout_alignParentBottom="true"
+    />
+<RadioButton
+    android:id="@+id/mumbai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView2"
+    android:layout_alignBottom="@+id/textView2"
+    android:layout_toLeftOf="@+id/textView12"
+    android:layout_toStartOf="@+id/textView12" />
+
+<RadioButton
+    android:id="@+id/banglore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView3"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_toRightOf="@+id/textView3"
+    android:layout_toEndOf="@+id/textView3" />
+
+<RadioButton
+    android:id="@+id/goa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView8"
+    android:layout_alignBottom="@+id/textView8"
+    android:layout_toLeftOf="@+id/textView8"
+    android:layout_toStartOf="@+id/textView8" />
+
+<RadioButton
+    android:id="@+id/pune"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/textView4"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="24dp"
+    android:layout_marginEnd="24dp" />
+
+<RadioButton
+    android:id="@+id/surat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView7"
+    android:layout_alignBottom="@+id/textView7"
+    android:layout_toLeftOf="@+id/textView7"
+    android:layout_toStartOf="@+id/textView7" />
+
+<RadioButton
+    android:id="@+id/chennai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView10"
+    android:layout_alignBottom="@+id/textView10"
+    android:layout_toRightOf="@+id/textView7"
+    android:layout_toEndOf="@+id/textView7" />
+
+<RadioButton
+    android:id="@+id/nagpur"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView9"
+    android:layout_toLeftOf="@+id/textView9"
+    android:layout_toStartOf="@+id/textView9" />
+
+<RadioButton
+    android:id="@+id/delhi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/textView11"
+    android:layout_alignLeft="@+id/banglore"
+    android:layout_alignStart="@+id/banglore"
+    android:layout_marginLeft="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_toLeftOf="@+id/textView7"
+    android:layout_toStartOf="@+id/textView7" />
+
+<TextView
+    android:id="@+id/textView12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/textView10"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/textView10"
+    android:layout_marginBottom="23dp"
+    android:text="TextView" />
+
+</RelativeLayout>
+
